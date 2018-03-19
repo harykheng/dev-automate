@@ -49,7 +49,7 @@ var DatatableColumnWidthDemo = function () {
 				selector: {class: 'm-checkbox--solid m-checkbox--brand'}
 			}, {
 				field: "OrderID",
-				title: "Order ID",
+				title: "Test ID",
 				sortable: 'asc', // default sort
 				filterable: false, // disable or enable filtering
 				width: 150
