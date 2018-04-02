@@ -41,7 +41,7 @@ var DatatableColumnWidthDemo = function () {
 
             // columns definition
             columns: [{
-                field: "OrderID",
+                field: "ShipName",
                 title: "Name",
                 sortable: 'asc', // default sort
                 filterable: false, // disable or enable filtering
@@ -52,7 +52,7 @@ var DatatableColumnWidthDemo = function () {
                 width: 500
             }, {
                 field: 'Type',
-                title: 'Type',
+                title: 'Status',
                 width: 100,
                 // callback function support for column rendering
                 template: function (data) {
@@ -60,11 +60,11 @@ var DatatableColumnWidthDemo = function () {
                         1: { 'title': 'Pending', 'class': 'm-link--success' },
                         2: { 'title': 'Delivered', 'class': ' m-link--primary' },
                         3: { 'title': 'Canceled', 'class': ' m-link--danger' }
-                        };
+                    };
                     return '<span class="m-link ' + type[data.Type].class +
                         ' m-link--state">' + type[data.Type].title + '</span>';
-                    },
-                }, {
+                },
+            }, {
                 field: "ShipDate",
                 title: "Priority",
                 width: 100
@@ -79,12 +79,6 @@ var DatatableColumnWidthDemo = function () {
                     return '<span>\
 						<a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" title="View details">\
 							<i class="la la-ellipsis-h"></i>\
-						</a>\
-						<a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" title="Edit details">\
-							<i class="la la-edit"></i>\
-						</a>\
-						<a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-danger m-btn--icon m-btn--icon-only m-btn--pill" title="Delete">\
-							<i class="la la-trash"></i>\
 						</a>\
 					</span>';
                 }
