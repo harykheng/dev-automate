@@ -51,15 +51,15 @@ var DatatableColumnRenderingDemo = function () {
                     title: "Name",
                     sortable: 'asc', // default sort
                     filterable: false, // disable or enable filtering
-                    width: 150
+                    width: 200
                 }, {
                     field: "Notes",
                     title: "Description",
-                    width: 500
+                    width: 450
                 }, {
-                    field: 'Type',
-                    title: 'Status',
-                    width: 100,
+                    field: 'Status',
+                    title: 'Total Audience',
+                    width: 150,
                     // callback function support for column rendering
                     template: function (data) {
                         var type = {
@@ -70,10 +70,6 @@ var DatatableColumnRenderingDemo = function () {
                         return '<span class="m-link ' + type[data.Type].class +
                             ' m-link--state">' + type[data.Type].title + '</span>';
                     },
-                }, {
-                    field: "ShipDate",
-                    title: "Priority",
-                    width: 100
                 }, {
                     field: "Actions",
                     width: 110,
