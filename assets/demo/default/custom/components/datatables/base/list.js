@@ -63,12 +63,12 @@ var DatatableColumnRenderingDemo = function () {
                     // callback function support for column rendering
                     template: function (data) {
                         var type = {
-                            1: { 'title': 'Pending', 'class': 'm-link--success' },
-                            2: { 'title': 'Delivered', 'class': ' m-link--primary' },
-                            3: { 'title': 'Canceled', 'class': ' m-link--danger' }
+                            1: { 'title': 'Pending', 'class': 'm--font-success' },
+                            2: { 'title': 'Delivered', 'class': ' m--font-primary' },
+                            3: { 'title': 'Canceled', 'class': ' m--font-danger' }
                         };
-                        return '<span class="m-link ' + type[data.Type].class +
-                            ' m-link--state">' + type[data.Type].title + '</span>';
+                        return '<span class="m--font ' + type[data.Type].class +
+                            ' m--font-state">' + type[data.Type].title + '</span>';
                     },
                 }, {
                     field: "Actions",
