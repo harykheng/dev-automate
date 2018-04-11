@@ -20,23 +20,21 @@ var FormRepeater = function() {
         });
     }
 
-    var demo2 = function() {
-        $('#m_repeater_2').repeater({            
+    var demo2 = function () {
+        $('#m_repeater_2').repeater({
             initEmpty: false,
-           
+
             defaultValues: {
                 'text-input': 'foo'
             },
-             
-            show: function() {
-                $(this).slideDown();                               
+
+            show: function () {
+                $(this).slideDown();
             },
 
-            hide: function(deleteElement) {                 
-                if(confirm('Are you sure you want to delete this element?')) {
-                    $(this).slideUp(deleteElement);
-                }                                
-            }      
+            hide: function (deleteElement) {
+                $(this).slideUp(deleteElement);
+            }
         });
     }
 

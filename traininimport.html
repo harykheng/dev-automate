@@ -190,43 +190,11 @@
                         <div id="m_header_topbar" class="m-topbar  m-stack m-stack--ver m-stack--general">
                             <div class="m-stack__item m-topbar__nav-wrapper">
                                 <ul class="m-topbar__nav m-nav m-nav--inline">
-                                    <li class="
-	m-nav__item m-dropdown m-dropdown--large m-dropdown--arrow m-dropdown--align-center m-dropdown--mobile-full-width m-dropdown--skin-light	m-list-search m-list-search--skin-light"
-                                        data-dropdown-toggle="click" data-dropdown-persistent="true" id="m_quicksearch" data-search-type="dropdown">
+                                    <li class="m-nav__item m-topbar__notifications m-topbar__notifications--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-center 	m-dropdown--mobile-full-width"
+                                        data-dropdown-toggle="click" data-dropdown-persistent="true">
                                         <a href="#" class="m-nav__link m-dropdown__toggle">
                                             <span class="m-nav__link-icon">
                                                 <i class="flaticon-search-1"></i>
-                                            </span>
-                                        </a>
-                                        <div class="m-dropdown__wrapper">
-                                            <span class="m-dropdown__arrow m-dropdown__arrow--center"></span>
-                                            <div class="m-dropdown__inner ">
-                                                <div class="m-dropdown__header">
-                                                    <form class="m-list-search__form">
-                                                        <div class="m-list-search__form-wrapper">
-                                                            <span class="m-list-search__form-input-wrapper">
-                                                                <input id="m_quicksearch_input" autocomplete="off" type="text" name="q" class="m-list-search__form-input" value="" placeholder="Search...">
-                                                            </span>
-                                                            <span class="m-list-search__form-icon-close" id="m_quicksearch_close">
-                                                                <i class="la la-remove"></i>
-                                                            </span>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                <div class="m-dropdown__body">
-                                                    <div class="m-dropdown__scrollable m-scrollable" data-max-height="300" data-mobile-max-height="200">
-                                                        <div class="m-dropdown__content"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="m-nav__item m-topbar__notifications m-topbar__notifications--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-center 	m-dropdown--mobile-full-width"
-                                        data-dropdown-toggle="click" data-dropdown-persistent="true">
-                                        <a href="#" class="m-nav__link m-dropdown__toggle" id="m_topbar_notification_icon">
-                                            <span class="m-nav__link-badge m-badge m-badge--dot m-badge--dot-small m-badge--danger"></span>
-                                            <span class="m-nav__link-icon">
-                                                <i class="flaticon-music-2"></i>
                                             </span>
                                         </a>
                                         <div class="m-dropdown__wrapper">
@@ -237,14 +205,14 @@
                                                         3 New
                                                     </span>
                                                     <span class="m-dropdown__header-subtitle">
-                                                        User Notifications
+                                                        Notifications
                                                     </span>
                                                 </div>
                                                 <div class="m-dropdown__body">
                                                     <div class="m-dropdown__content">
                                                         <div class="tab-content">
-                                                            <div class="tab-pane active" id="topbar_notifications_notifications" role="tabpanel">
-                                                                <div class="m-scrollable" data-scrollable="true" data-max-height="250" data-mobile-max-height="200">
+                                                            <div>
+                                                                <div class="m-scrollable" data-max-height="250" data-mobile-max-height="200">
                                                                     <div class="m-list-timeline m-list-timeline--skin-light">
                                                                         <div class="m-list-timeline__items">
                                                                             <div class="m-list-timeline__item">
@@ -313,21 +281,18 @@
                                     </li>
                                     <li class="m-nav__item m-topbar__quick-actions m-topbar__quick-actions--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push m-dropdown--mobile-full-width m-dropdown--skin-light"
                                         data-dropdown-toggle="click">
-                                        <a href="#" class="m-nav__link m-dropdown__toggle">
-                                            <span class="m-nav__link-badge m-badge m-badge--dot m-badge--info m--hide"></span>
+                                        <a href="#" class="m-nav__link m-dropdown__toggle" id="m_topbar_notification_icon">
+                                            <span class="m-nav__link-badge m-badge m-badge--dot m-badge--dot-small m-badge--danger"></span>
                                             <span class="m-nav__link-icon">
-                                                <i class="flaticon-share"></i>
+                                                <i class="flaticon-music-2"></i>
                                             </span>
                                         </a>
                                         <div class="m-dropdown__wrapper">
-                                            <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
+                                            <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust" style="color: #fff;"></span>
                                             <div class="m-dropdown__inner">
-                                                <div class="m-dropdown__header m--align-center" style="background: url(assets/app/media/img/misc/quick_actions_bg.jpg); background-size: cover;">
-                                                    <span class="m-dropdown__header-title">
-                                                        Quick Actions
-                                                    </span>
-                                                    <span class="m-dropdown__header-subtitle">
-                                                        Shortcuts
+                                                <div class="m-dropdown__header m--align-center">
+                                                    <span class="m-dropdown__header-title" style="color : #6f727d;">
+                                                        New Scenario
                                                     </span>
                                                 </div>
                                                 <div class="m-dropdown__body m-dropdown__body--paddingless">
@@ -499,7 +464,7 @@
                 <div id="m_ver_menu" class="m-aside-menu  m-aside-menu--skin-dark m-aside-menu--submenu-skin-dark " data-menu-vertical="true"
                     data-menu-scrollable="false" data-menu-dropdown-timeout="500">
                     <ul class="m-menu__nav  m-menu__nav--dropdown-submenu-arrow ">
-                        <li class="m-menu__item  m-menu__item--active" aria-haspopup="true">
+                        <li class="m-menu__item " aria-haspopup="true">
                             <a href="index.html" class="m-menu__link ">
                                 <i class="m-menu__link-icon flaticon-line-graph"></i>
                                 <span class="m-menu__link-title">
@@ -529,7 +494,7 @@
                                             </span>
                                         </span>
                                     </li>
-                                    <li class="m-menu__item " aria-haspopup="true">
+                                    <li class="m-menu__item" aria-haspopup="true">
                                         <a href="productList.html" class="m-menu__link ">
                                             <i class="m-menu__link-bullet m-menu__link-bullet--dot">
                                                 <span></span>
@@ -540,7 +505,7 @@
                                         </a>
                                     </li>
                                     <li class="m-menu__item " aria-haspopup="true">
-                                        <a href="components/base/typography.html" class="m-menu__link ">
+                                        <a href="#" class="m-menu__link ">
                                             <i class="m-menu__link-bullet m-menu__link-bullet--dot">
                                                 <span></span>
                                             </i>
@@ -569,15 +534,15 @@
                             </a>
                         </li>
                         <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                            <a href="#" class="m-menu__link m-menu__toggle">
+                            <a href="modules.html" class="m-menu__link m-menu__toggle">
                                 <i class="m-menu__link-icon flaticon-interface-8"></i>
                                 <span class="m-menu__link-text">
                                     Modules
                                 </span>
                             </a>
                         </li>
-                        <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                            <a href="#" class="m-menu__link m-menu__toggle">
+                        <li class="m-menu__item m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
+                            <a href="list.html" class="m-menu__link m-menu__toggle">
                                 <i class="m-menu__link-icon flaticon-interface-1"></i>
                                 <span class="m-menu__link-text">
                                     List
@@ -585,14 +550,14 @@
                             </a>
                         </li>
                         <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                            <a href="#" class="m-menu__link m-menu__toggle">
+                            <a href="scenario.html" class="m-menu__link m-menu__toggle">
                                 <i class="m-menu__link-icon flaticon-chat-1"></i>
                                 <span class="m-menu__link-text">
                                     Scenario
                                 </span>
                             </a>
                         </li>
-                        <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
+                        <li class="m-menu__item m-menu__item--submenu m-menu__item--open m-menu__item--expanded" aria-haspopup="true" data-menu-submenu-toggle="hover">
                             <a href="#" class="m-menu__link m-menu__toggle">
                                 <i class="m-menu__link-icon flaticon-rocket"></i>
                                 <span class="m-menu__link-text">
@@ -600,7 +565,7 @@
                                 </span>
                                 <i class="m-menu__ver-arrow la la-angle-right"></i>
                             </a>
-                            <div class="m-menu__submenu ">
+                            <div class="m-menu__submenu">
                                 <span class="m-menu__arrow"></span>
                                 <ul class="m-menu__subnav">
                                     <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
@@ -611,7 +576,7 @@
                                         </span>
                                     </li>
                                     <li class="m-menu__item " aria-haspopup="true">
-                                        <a href="components/timeline/timeline-1.html" class="m-menu__link ">
+                                        <a href="integrations.html" class="m-menu__link ">
                                             <i class="m-menu__link-bullet m-menu__link-bullet--dot">
                                                 <span></span>
                                             </i>
@@ -620,8 +585,8 @@
                                             </span>
                                         </a>
                                     </li>
-                                    <li class="m-menu__item " aria-haspopup="true">
-                                        <a href="components/timeline/timeline-2.html" class="m-menu__link ">
+                                    <li class="m-menu__item m-menu__item--active" aria-haspopup="true">
+                                        <a href="traininimport.html" class="m-menu__link ">
                                             <i class="m-menu__link-bullet m-menu__link-bullet--dot">
                                                 <span></span>
                                             </i>
@@ -631,7 +596,7 @@
                                         </a>
                                     </li>
                                     <li class="m-menu__item " aria-haspopup="true">
-                                        <a href="components/timeline/timeline-2.html" class="m-menu__link ">
+                                        <a href="conversation.html" class="m-menu__link ">
                                             <i class="m-menu__link-bullet m-menu__link-bullet--dot">
                                                 <span></span>
                                             </i>
@@ -641,7 +606,7 @@
                                         </a>
                                     </li>
                                     <li class="m-menu__item " aria-haspopup="true">
-                                        <a href="components/timeline/timeline-2.html" class="m-menu__link ">
+                                        <a href="setting.html" class="m-menu__link ">
                                             <i class="m-menu__link-bullet m-menu__link-bullet--dot">
                                                 <span></span>
                                             </i>
@@ -661,7 +626,7 @@
                                 </span>
                             </a>
                         </li>
-
+                
                         <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
                             <a href="#" class="m-menu__link m-menu__toggle">
                                 <i class="m-menu__link-icon flaticon-gift"></i>
