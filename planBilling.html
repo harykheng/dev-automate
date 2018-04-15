@@ -27,7 +27,7 @@
     <link href="assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
     <link href="assets/demo/default/base/style.bundle.css" rel="stylesheet" type="text/css" />
     <!--end::Base Styles -->
-    <link rel="shortcut icon" href="assets/demo/default/media/img/logo/favicon.ico" />
+    <link rel="shortcut icon" href="assets/demo/default/media/img/logo/favicon2.ico" />
 </head>
 <!-- end::Head -->
 <!-- end::Body -->
@@ -643,10 +643,10 @@
                         <div class="d-flex align-items-center">
                             <div class="mr-auto">
                                 <h3 class="m-subheader__title m-subheader__title--separator">
-                                    Add Product
+                                    Plan & Billing
                                 </h3>
                                 <p class="m-nav m-nav--inline">
-                                    Donec ut dictum sem
+                                    Duis eget porttitor diam
                                 </p>
                                 <ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
                                     <li class="m-nav__item m-nav__item--home">
@@ -661,15 +661,26 @@
                     <!-- END: Subheader -->
                     <div class="m-content">
                         <div class="row">
-                            <div class="col-xl-12 col-lg-12">
+                            <div class="col-xl-6 col-lg-6">
                                 <div class="m-portlet m-portlet--full-height m-portlet--tabs  ">
                                     <div class="m-portlet__head">
                                         <div class="m-portlet__head-caption">
                                             <div class="m-portlet__head-title">
                                                 <h3 class="m-portlet__head-text">
-                                                    Profile Detail
+                                                    Plan Detail
                                                 </h3>
                                             </div>
+                                        </div>
+                                        <div class="m-portlet__head-tools">
+                                            <ul class="m-portlet__nav">
+                                                <li class="m-portlet__nav-item">
+                                                    <a href="#" class="btn btn-automate m-btn m-btn--custom m-btn--icon m-btn--pill ">
+                                                        <span style="font-size: 12px;">
+                                                            Change Plan
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <div class="tab-content">
@@ -679,260 +690,61 @@
                                                     <div class="form-group m-form__group row">
                                                         <div class="col-lg-6">
                                                             <label>
-                                                                Product Name
+                                                                Plan
                                                             </label>
-                                                            <input type="text" class="form-control m-input" placeholder="Input your product name">   
+                                                            <h5><b>Basic</b></h5>   
                                                         </div>
-                                                        <div class="col-lg-3">
-                                                            <label for="exampleSelect1">
-                                                                Category
-                                                            </label>
-                                                            <select class="form-control m-input" id="exampleSelect1">
-                                                                <option>
-                                                                    Select One
-                                                                </option>
-                                                                <option>
-                                                                    2
-                                                                </option>
-                                                                <option>
-                                                                    3
-                                                                </option>
-                                                                <option>
-                                                                    4
-                                                                </option>
-                                                                <option>
-                                                                    5
-                                                                </option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-lg-3">
+                                                        <div class="col-lg-6">
                                                             <label>
-                                                                Price
+                                                                Fee / Transfer
                                                             </label>
-                                                            <div class="input-group m-input-group m-input-group--square">
-                                                                <div class="input-group-prepend">
-                                                                    <span class="input-group-text">
-                                                                        Rp
-                                                                    </span>
-                                                                </div>
-                                                                <input type="text" class="form-control m-input" placeholder="0">
-                                                            </div>
+                                                            <h5><b>Rp. 500</b></h5>   
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-form__group row">
+                                                        <div class="col-lg-6">
+                                                            <label>
+                                                                Transaction Limit
+                                                            </label>
+                                                            <h5><b>Unlimited</b></h5>   
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <label>
+                                                                Scenario Limit
+                                                            </label>
+                                                            <h5><b>Unlimited</b></h5>   
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-form__group row">
+                                                        <div class="col-lg-6">
+                                                            <label>
+                                                                Module Limit
+                                                            </label>
+                                                            <h5><b>Unlimited</b></h5>   
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <label>
+                                                                Event Limit
+                                                            </label>
+                                                            <h5><b>Unlimited</b></h5>   
                                                         </div>
                                                     </div>
                                                     <div class="form-group m-form__group row">
                                                         <div class="col-lg-12">
-                                                        <label>
-                                                            Description
-                                                        </label>
-                                                        <div>
-                                                            <div class="summernote" id="m_summernote_1"></div>
-                                                        </div>
-                                                    </div>
-                                                    </div>
-                                                    <div class="form-group m-form__group row">
-                                                        <div class="col-lg-12">
-                                                        <label>
-                                                            Tags / Category Item (Press Enter After Add Item)
-                                                        </label>
-                                                        <div>
-                                                            <select class="form-control m-select2" id="m_select2_3" name="param" multiple="multiple">
-                                                                <optgroup label="Alaskan/Hawaiian Time Zone">
-                                                                    <option value="AK" selected>
-                                                                        Alaska
-                                                                    </option>
-                                                                    <option value="HI">
-                                                                        Hawaii
-                                                                    </option>
-                                                                </optgroup>
-                                                                <optgroup label="Pacific Time Zone">
-                                                                    <option value="CA">
-                                                                        California
-                                                                    </option>
-                                                                    <option value="NV" selected>
-                                                                        Nevada
-                                                                    </option>
-                                                                    <option value="OR">
-                                                                        Oregon
-                                                                    </option>
-                                                                    <option value="WA">
-                                                                        Washington
-                                                                    </option>
-                                                                </optgroup>
-                                                                <optgroup label="Mountain Time Zone">
-                                                                    <option value="AZ">
-                                                                        Arizona
-                                                                    </option>
-                                                                    <option value="CO">
-                                                                        Colorado
-                                                                    </option>
-                                                                    <option value="ID">
-                                                                        Idaho
-                                                                    </option>
-                                                                    <option value="MT" selected>
-                                                                        Montana
-                                                                    </option>
-                                                                    <option value="NE">
-                                                                        Nebraska
-                                                                    </option>
-                                                                    <option value="NM">
-                                                                        New Mexico
-                                                                    </option>
-                                                                    <option value="ND">
-                                                                        North Dakota
-                                                                    </option>
-                                                                    <option value="UT">
-                                                                        Utah
-                                                                    </option>
-                                                                    <option value="WY">
-                                                                        Wyoming
-                                                                    </option>
-                                                                </optgroup>
-                                                                <optgroup label="Central Time Zone">
-                                                                    <option value="AL">
-                                                                        Alabama
-                                                                    </option>
-                                                                    <option value="AR">
-                                                                        Arkansas
-                                                                    </option>
-                                                                    <option value="IL">
-                                                                        Illinois
-                                                                    </option>
-                                                                    <option value="IA">
-                                                                        Iowa
-                                                                    </option>
-                                                                    <option value="KS">
-                                                                        Kansas
-                                                                    </option>
-                                                                    <option value="KY">
-                                                                        Kentucky
-                                                                    </option>
-                                                                    <option value="LA">
-                                                                        Louisiana
-                                                                    </option>
-                                                                    <option value="MN">
-                                                                        Minnesota
-                                                                    </option>
-                                                                    <option value="MS">
-                                                                        Mississippi
-                                                                    </option>
-                                                                    <option value="MO">
-                                                                        Missouri
-                                                                    </option>
-                                                                    <option value="OK">
-                                                                        Oklahoma
-                                                                    </option>
-                                                                    <option value="SD">
-                                                                        South Dakota
-                                                                    </option>
-                                                                    <option value="TX">
-                                                                        Texas
-                                                                    </option>
-                                                                    <option value="TN">
-                                                                        Tennessee
-                                                                    </option>
-                                                                    <option value="WI">
-                                                                        Wisconsin
-                                                                    </option>
-                                                                </optgroup>
-                                                                <optgroup label="Eastern Time Zone">
-                                                                    <option value="CT">
-                                                                        Connecticut
-                                                                    </option>
-                                                                    <option value="DE">
-                                                                        Delaware
-                                                                    </option>
-                                                                    <option value="FL">
-                                                                        Florida
-                                                                    </option>
-                                                                    <option value="GA">
-                                                                        Georgia
-                                                                    </option>
-                                                                    <option value="IN">
-                                                                        Indiana
-                                                                    </option>
-                                                                    <option value="ME">
-                                                                        Maine
-                                                                    </option>
-                                                                    <option value="MD">
-                                                                        Maryland
-                                                                    </option>
-                                                                    <option value="MA">
-                                                                        Massachusetts
-                                                                    </option>
-                                                                    <option value="MI">
-                                                                        Michigan
-                                                                    </option>
-                                                                    <option value="NH">
-                                                                        New Hampshire
-                                                                    </option>
-                                                                    <option value="NJ">
-                                                                        New Jersey
-                                                                    </option>
-                                                                    <option value="NY">
-                                                                        New York
-                                                                    </option>
-                                                                    <option value="NC">
-                                                                        North Carolina
-                                                                    </option>
-                                                                    <option value="OH">
-                                                                        Ohio
-                                                                    </option>
-                                                                    <option value="PA">
-                                                                        Pennsylvania
-                                                                    </option>
-                                                                    <option value="RI">
-                                                                        Rhode Island
-                                                                    </option>
-                                                                    <option value="SC">
-                                                                        South Carolina
-                                                                    </option>
-                                                                    <option value="VT">
-                                                                        Vermont
-                                                                    </option>
-                                                                    <option value="VA">
-                                                                        Virginia
-                                                                    </option>
-                                                                    <option value="WV">
-                                                                        West Virginia
-                                                                    </option>
-                                                                </optgroup>
-                                                            </select>
-                                                        </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group m-form__group row">
-                                                        <div class="col-lg-12">
-                                                        <label>
-                                                            Main Image (maximum size for image is 5 MB)
-                                                        </label>
-                                                        <div>
-                                                            <div class="m-dropzone dropzone" action="inc/api/dropzone/upload.php" id="m-dropzone-one">
-                                                                <div class="m-dropzone__msg dz-message needsclick">
-                                                                    <h3 class="m-dropzone__msg-title">
-                                                                        Drop files here or click to upload.
-                                                                    </h3>
-                                                                    <span class="m-dropzone__msg-desc">
-                                                                        This is just a demo dropzone. Selected files are
-                                                                        <strong>
-                                                                            not
-                                                                        </strong>
-                                                                        actually uploaded.
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                            <label>
+                                                                Media Limit
+                                                            </label>
+                                                            <h5><b>EMAIL,TELEGRAM,MESSENGER,LINE,SMS</b></h5>   
                                                         </div>
                                                     </div>
                                                 </div>
                                             </form>
                                         </div>
-
-                                        
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-xl-12 col-lg-12">
+                            <div class="col-xl-6 col-lg-6">
                                 <div class="m-portlet m-portlet--full-height m-portlet--tabs  ">
                                     <div class="m-portlet__head">
                                         <div class="m-portlet__head-caption">
@@ -942,13 +754,16 @@
                                                 </h3>
                                             </div>
                                         </div>
-                                        <div class="m-portlet__head-tools" style="padding-top: 15px;">
-                                            <span class="m-switch m-switch--outline m-switch--icon m-switch--success">
-                                                <label>
-                                                    <input type="checkbox" checked="checked" name="">
-                                                    <span></span>
-                                                </label>
-                                            </span>
+                                        <div class="m-portlet__head-tools">
+                                            <ul class="m-portlet__nav">
+                                                <li class="m-portlet__nav-item">
+                                                    <a href="#" class="btn btn-automate m-btn m-btn--custom m-btn--icon m-btn--pill ">
+                                                        <span style="font-size: 12px;">
+                                                            Change Payment Methode
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <div class="tab-content">
@@ -958,174 +773,44 @@
                                                     <div class="form-group m-form__group row">
                                                         <div class="col-lg-6">
                                                             <label>
-                                                                Range Picker
+                                                                Price / Month
                                                             </label>
-                                                            <div>
-                                                                <div class="input-daterange input-group" id="m_datepicker_5">
-                                                                    <input type="text" class="form-control m-input" name="start" />
-                                                                    <div class="input-group-append">
-                                                                        <span class="input-group-text">
-                                                                            <i class="la la-angle-right"></i>
-                                                                        </span>
-                                                                    </div>
-                                                                    <input type="text" class="form-control" name="end" />
-                                                                </div>
-                                                            </div>
+                                                            <h5><b>Rp. 3.500.000</b></h5>   
                                                         </div>
                                                         <div class="col-lg-6">
                                                             <label>
-                                                                Goals
+                                                                Status
                                                             </label>
-                                                            <input type="text" class="form-control m-input" placeholder="">   
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-12 col-lg-12">
-                                <div class="m-portlet m-portlet--full-height m-portlet--tabs  ">
-                                    <div class="m-portlet__head">
-                                        <div class="m-portlet__head-caption">
-                                            <div class="m-portlet__head-title">
-                                                <h3 class="m-portlet__head-text">
-                                                    Social Media
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="m-portlet__head-tools" style="padding-top: 15px;">
-                                            <span class="m-switch m-switch--outline m-switch--icon m-switch--success">
-                                                <label>
-                                                    <input type="checkbox" checked="checked" name="">
-                                                    <span></span>
-                                                </label>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="tab-content">
-                                        <div class="tab-pane active" id="m_user_profile_tab_1">
-                                            <form class="m-form m-form--fit m-form--label-align-right">
-                                                <div class="m-portlet__body">
-                                                    <div class="form-group m-form__group">
-                                                        <div class="row">
-                                                            <div class="col-lg-3">
-                                                                <label class="m-option">
-                                                                    <span class="m-option__control">
-                                                                        <span class="m-radio m-radio--brand m-radio--check-bold">
-                                                                            <input type="radio" name="m_option_1" value="1">
-                                                                            <span></span>
-                                                                        </span>
-                                                                    </span>
-                                                                    <span class="m-option__label">
-                                                                        <span class="m-option__head" style="margin-bottom: 15%;">
-                                                                            <span class="m-option__title">
-                                                                                <img src="assets/app/media/img/users/user4.jpg" class="m--img-rounded m--marginless m--img-centered" alt="" style="width: 65%;"/>
-                                                                            </span>
-                                                                            <span class="m-option__body">
-                                                                                facebook
-                                                                            </span>
-                                                                        </span>
-                                                                        <span class="m-option__focus">
-                                                                            Fahmi Bafadhal
-                                                                        </span>
-                                                                    </span>
-                                                                </label>
-                                                            </div>
-                                                            <div class="col-lg-3">
-                                                                <label class="m-option">
-                                                                    <span class="m-option__control">
-                                                                        <span class="m-radio m-radio--brand m-radio--check-bold">
-                                                                            <input type="radio" name="m_option_1" value="1">
-                                                                            <span></span>
-                                                                        </span>
-                                                                    </span>
-                                                                    <span class="m-option__label">
-                                                                        <span class="m-option__head" style="margin-bottom: 15%;">
-                                                                            <span class="m-option__title">
-                                                                                <img src="assets/app/media/img/users/user4.jpg" class="m--img-rounded m--marginless m--img-centered" alt="" style="width: 65%;"/>
-                                                                            </span>
-                                                                            <span class="m-option__body">
-                                                                                instagram
-                                                                            </span>
-                                                                        </span>
-                                                                        <span class="m-option__focus">
-                                                                            fahmiph
-                                                                        </span>
-                                                                    </span>
-                                                                </label>
-                                                            </div>
-                                                            <div class="col-lg-3">
-                                                                <label class="m-option">
-                                                                    <span class="m-option__control">
-                                                                        <span class="m-radio m-radio--brand m-radio--check-bold">
-                                                                            <input type="radio" name="m_option_1" value="1">
-                                                                            <span></span>
-                                                                        </span>
-                                                                    </span>
-                                                                    <span class="m-option__label">
-                                                                        <span class="m-option__head" style="margin-bottom: 15%;">
-                                                                            <span class="m-option__title">
-                                                                                <img src="assets/app/media/img/users/user4.jpg" class="m--img-rounded m--marginless m--img-centered" alt="" style="width: 65%;"/>
-                                                                            </span>
-                                                                            <span class="m-option__body">
-                                                                                twitter
-                                                                            </span>
-                                                                        </span>
-                                                                        <span class="m-option__focus">
-                                                                            fahmi_ph
-                                                                        </span>
-                                                                    </span>
-                                                                </label>
-                                                            </div>
-                                                            <div class="col-lg-3">
-                                                                <label class="m-option">
-                                                                    <span class="m-option__control">
-                                                                        <span class="m-radio m-radio--brand m-radio--check-bold">
-                                                                            <input type="radio" name="m_option_1" value="1">
-                                                                            <span></span>
-                                                                        </span>
-                                                                    </span>
-                                                                    <span class="m-option__label">
-                                                                        <span class="m-option__head" style="margin-bottom: 15%;">
-                                                                            <span class="m-option__title">
-                                                                                <img src="assets/app/media/img/users/user4.jpg" class="m--img-rounded m--marginless m--img-centered" alt="" style="width: 65%;"/>
-                                                                            </span>
-                                                                            <span class="m-option__body">
-                                                                                facebook
-                                                                            </span>
-                                                                        </span>
-                                                                        <span class="m-option__focus">
-                                                                            Fahmi Bafadhal
-                                                                        </span>
-                                                                    </span>
-                                                                </label>
-                                                            </div>
+                                                            <h5><b>Active</b></h5>   
                                                         </div>
                                                     </div>
                                                     <div class="form-group m-form__group row">
-                                                        <div class="col-lg-12">
-                                                        <label>
-                                                            Headline
-                                                        </label>
-                                                        <div>
-                                                            <textarea class="form-control" id="headline-area" rows="3"></textarea>
+                                                        <div class="col-lg-6">
+                                                            <label>
+                                                                Latest Payment Date
+                                                            </label>
+                                                            <h5><b>23 January 2018</b></h5>   
                                                         </div>
+                                                        <div class="col-lg-6">
+                                                            <label>
+                                                                Next Bill Date
+                                                            </label>
+                                                            <h5><b>23 February 2018</b></h5>   
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-form__group row">
+                                                        <div class="col-lg-6">
+                                                            <label>
+                                                                Payment Methode
+                                                            </label>
+                                                            <h5><b>Automate Balance</b></h5>   
                                                         </div>
                                                     </div>
                                                 </div>
                                             </form>
-                                        </div>      
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div>
-                                <button type="button" class="btn m-btn--pill btn-automate m-btn--air btn-success" style="margin: 18px; width: 100%;">
-                                    Add Product
-                                </button>
                             </div>
                         </div>
                     </div>

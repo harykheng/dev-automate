@@ -402,6 +402,24 @@ box-shadow: 0px 0px 32px -7px rgba(150,150,150,1);
   color: #ffffff; 
 }
 
+.btn-choose-plan{
+  background-color: #b91f68;
+  color: #fff;
+}
+
+.price-choose-plan{
+  font-size:33px !important;
+}
+
+.label-choose-plan{
+  margin: 8px 0 0 -25px !important;
+  font-size:15px !important;
+}
+
+.btn-automate{
+  background-color:#1db6ad;
+  color:#fff;
+}
 
 .lead {
   font-size: 1.25rem;
@@ -12052,11 +12070,11 @@ b, strong {
       width: 100%; }
 
 .m-link {
-  color: #716aca; }
+  color: #b91f68; }
   .m-link:hover {
-    color: #5f57c3; }
+    color: #b91f68; }
     .m-link:hover:after {
-      border-bottom: 1px solid #5f57c3;
+      border-bottom: 1px solid #b91f68;
       opacity: 0.3 ;
       filter: alpha(opacity=30) ; }
 
