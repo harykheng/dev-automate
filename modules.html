@@ -682,23 +682,20 @@
                                             <div class="col-md-4">
                                                 <div class="m-form__group m-form__group--inline">
                                                     <div class="m-form__label">
-                                                        <label>
-                                                            Status:
+                                                        <label class="m-label m-label--single">
+                                                            Type:
                                                         </label>
                                                     </div>
                                                     <div class="m-form__control">
-                                                        <select class="form-control m-bootstrap-select" id="m_form_status">
+                                                        <select class="form-control m-bootstrap-select" id="m_form_type">
                                                             <option value="">
                                                                 All
                                                             </option>
                                                             <option value="1">
-                                                                Pending
+                                                                WorkFlow
                                                             </option>
                                                             <option value="2">
-                                                                Delivered
-                                                            </option>
-                                                            <option value="3">
-                                                                Canceled
+                                                                Promotion
                                                             </option>
                                                         </select>
                                                     </div>
@@ -722,9 +719,85 @@
                             </div>
                             <!--end: Search Form -->
                             <!--begin: Datatable -->
-                            <table>
-                                <div class="m_datatable" id="base_column_width"></div>
-                                
+                            <table class="m-datatable" id="html_table" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th title="Field #1">
+                                            Name
+                                        </th>
+                                        <th title="Field #2">
+                                            Description
+                                        </th>
+                                        <th title="Field #3">
+                                            Type
+                                        </th>
+                                        <th title="Field #4">
+                                            Priority
+                                        </th>
+                                        <th title="Field #5">
+                                            Action
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Reminder Abbandon Chart
+                                        </td>
+                                        <td>
+                                            Mengingatkan untuk kembali belanja setelah transaksi gagal. 
+                                        </td>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            2
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" data-toggle="dropdown">
+                                                <i class="la la-ellipsis-h"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Reminder Abbandon Chart
+                                        </td>
+                                        <td>
+                                            Mengingatkan untuk kembali belanja setelah transaksi gagal.
+                                        </td>
+                                        <td>
+                                            2
+                                        </td>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" data-toggle="dropdown">
+                                                <i class="la la-ellipsis-h"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Reminder Abbandon Chart
+                                        </td>
+                                        <td>
+                                            Mengingatkan untuk kembali belanja setelah transaksi gagal.
+                                        </td>
+                                        <td>
+                                            2
+                                        </td>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" data-toggle="dropdown">
+                                                <i class="la la-ellipsis-h"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
                             </table>
                             <!--end: Datatable -->
                         </div>

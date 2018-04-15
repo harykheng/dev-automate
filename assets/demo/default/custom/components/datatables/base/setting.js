@@ -1,117 +1,56 @@
 //== Class definition
 
-var DatatableColumnRenderingDemo = function () {
+var DatatableHtmlTableDemo = function () {
     //== Private functions
 
-    // basic demo
+    // demo initializer
     var demo = function () {
 
-        var datatable = $('.m_datatable').mDatatable({
-            // datasource definition
+        var datatable = $('.m-datatable').mDatatable({
             data: {
-                type: 'remote',
-                source: {
-                    read: {
-                        url: 'https://keenthemes.com/metronic/preview/inc/api/datatables/demos/default.php',
-                    },
-                },
-                pageSize: 10, // display 20 records per page
-                serverPaging: true,
-                serverFiltering: true,
-                serverSorting: true,
+                saveState: { cookie: false },
             },
-
-            // layout definition
-            layout: {
-                theme: 'default', // datatable theme
-                class: '', // custom wrapper class
-                scroll: false, // enable/disable datatable scroll both horizontal and vertical when needed.
-                footer: false // display/hide footer
-            },
-
-            // column sorting
-            sortable: true,
-
-            pagination: true,
-
             search: {
                 input: $('#generalSearch'),
-                delay: 400,
             },
-
-            rows: {
-                callback: function (row, data, index) {
-                },
-            },
-
-            // columns definition
             columns: [
                 {
-                    field: "OrderID",
-                    title: "Name",
-                    sortable: 'asc', // default sort
-                    filterable: false, // disable or enable filtering
-                    width: 100
-                }, {
-                    field: "CompanyEmail",
-                    title: "Email",
-                    width: 200
-                }, {
-                    field: "OrderID",
-                    title: "Mobile No",
-                    width: 100
-                }, {
-                    field: "Notes",
-                    title: "Note",
-                    width: 400
-                }, {
-                    field: "Actions",
-                    width: 70,
-                    title: "Actions",
-                    sortable: false,
-                    overflow: 'visible',
-                    template: function (row, index, datatable) {
-                        var dropup = (datatable.getPageSize() - index) <= 4 ? 'dropup' : '';
-                        return '<span>\
-						<a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" title="View details">\
-							<i class="la la-ellipsis-h"></i>\
-						</a>\
-					</span>';
-                    }
-                }],
+                    field: 'Name',
+                    type: 'text',
+                },
+                {
+                    field: 'Email',
+                    type: 'email',
+                },
+                {
+                    field: 'MobileNo',
+                    type: 'number',
+                },
+                {
+                    field: 'Note',
+                    type: 'text',
+                },
+            ],
         });
 
-        var query = datatable.getDataSourceQuery();
-
-        $('#m_form_status').on('change', function () {
-            // shortcode to datatable.getDataSourceParam('query');
-            var query = datatable.getDataSourceQuery();
-            query.Status = $(this).val().toLowerCase();
-            // shortcode to datatable.setDataSourceParam('query', query);
-            datatable.setDataSourceQuery(query);
-            datatable.load();
-        }).val(typeof query.Status !== 'undefined' ? query.Status : '');
 
         $('#m_form_type').on('change', function () {
-            // shortcode to datatable.getDataSourceParam('query');
-            var query = datatable.getDataSourceQuery();
-            query.Type = $(this).val().toLowerCase();
-            // shortcode to datatable.setDataSourceParam('query', query);
-            datatable.setDataSourceQuery(query);
-            datatable.load();
-        }).val(typeof query.Type !== 'undefined' ? query.Type : '');
+            datatable.search($(this).val().toLowerCase(), 'Type');
+        });
 
         $('#m_form_status, #m_form_type').selectpicker();
+
     };
 
     return {
-        // public functions
+        //== Public functions
         init: function () {
+            // init dmeo
             demo();
         },
     };
 }();
 
 jQuery(document).ready(function () {
-    DatatableColumnRenderingDemo.init();
+    DatatableHtmlTableDemo.init();
 });
