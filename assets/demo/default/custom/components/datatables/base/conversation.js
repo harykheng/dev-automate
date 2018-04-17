@@ -36,24 +36,6 @@ var DatatableHtmlTableDemo = function () {
           },
         },
         {
-          field: 'StartTime',
-          title: 'Start Time',
-          width: 150,
-          // callback function support for column rendering
-          template: function (row) {
-            return row.StartTime + ' | ' + row.StartTime;
-          },
-        },
-        {
-          field: 'EndTime',
-          title: 'End Time',
-          width: 150,
-          // callback function support for column rendering
-          template: function (row) {
-            return row.EndTime + ' | ' + row.EndTime;
-          },
-        },
-        {
           field: 'Duration',
           type: 'time',
           format: 'HH/mm/ss',
