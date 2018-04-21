@@ -659,7 +659,7 @@
                                 </ul>
                             </div>
                             <div>
-                                <button type="button" class="btn m-btn--pill  m-btn--air btn-danger" style="margin: 18px; width: 85%; background-color: #b91f68;">
+                                <button type="button" class="btn  m-btn m-btn--custom m-btn--icon m-btn--pill " style="margin: 18px; width: 85%; background-color: #b91f68; color:#fff;" data-toggle="modal" data-target="#request_CashOut">
                                     Request Cashout
                                 </button>
                             </div>
@@ -1117,6 +1117,77 @@
 					</div>
                 </div>
             </div>
+
+            <!--begin::Modal-->
+			<div class="modal fade" id="request_CashOut" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                Request Cashout
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">
+                                    &times;
+                                </span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <span class="m-menu__link-text">
+                                Balance </br>
+                                <div style="color: #b91f68;font-size: 18px; font-weight:  bold;">Rp. 3.000.000</div>
+                            </span>
+                            </br>
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="form-control-label" >
+                                        Name
+                                    </label>
+                                    <div class="input-group m-input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                Rp.
+                                            </span>
+                                        </div>
+                                        <input type="number" class="form-control m-input" placeholder="0" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="form-control-label">
+                                        Description
+                                    </label>
+                                    <select class="form-control m-input" id="exampleSelect1">
+                                        <option>
+                                            Select One
+                                        </option>
+                                        <option>
+                                            2
+                                        </option>
+                                        <option>
+                                            3
+                                        </option>
+                                        <option>
+                                            4
+                                        </option>
+                                        <option>
+                                            5
+                                        </option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn m-btn--pill btn-secondary" data-dismiss="modal">
+                                Cancel
+                            </button>
+                            <button type="button" class="btn m-btn--pill btn-success" data>
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end::Modal-->
             <!-- ISI SAMPAI DI SINI-->
             <footer class="m-grid__item		m-footer ">
                 <div class="m-container m-container--fluid m-container--full-height m-page__container">
