@@ -402,6 +402,11 @@ box-shadow: 0px 0px 32px -7px rgba(150,150,150,1);
   color: #ffffff; 
 }
 
+.m-badge.m-badge--void {
+  background-color: #c4c5d6;
+  color: #ffffff; 
+}
+
 .btn-choose-plan{
   background-color: #b91f68;
   color: #fff;
