@@ -1827,6 +1827,52 @@ fieldset:disabled a.btn {
     .show > .btn-info.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(54, 163, 247, 0.5); }
 
+.btn-fb {
+  color: #fff;
+  background-color: #3B5998;
+  border-color: #3B5998; }
+  .btn-fb:hover {
+    color: #fff;
+    background-color: rgb(51, 76, 130);
+    border-color: rgb(51, 76, 130); }
+  .btn-fb:focus, .btn-fb.focus {
+    box-shadow: 0 0 0 0.2rem rgba(54, 163, 247, 0.5); }
+  .btn-fb.disabled, .btn-fb:disabled {
+    color: #fff;
+    background-color: #3B5998;
+    border-color: #3B5998; }
+  .btn-fb:not(:disabled):not(.disabled):active, .btn-fb:not(:disabled):not(.disabled).active,
+  .show > .btn-fb.dropdown-toggle {
+    color: #fff;
+    background-color: #3B5998;
+    border-color: #3B5998; }
+    .btn-fb:not(:disabled):not(.disabled):active:focus, .btn-fb:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-fb.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(54, 163, 247, 0.5); }
+
+.btn-instagram {
+  color: #fff;
+  background-color: #833AB4;
+  border-color: #833AB4; }
+  .btn-instagram:hover {
+    color: #fff;
+    background-color: rgb(116, 53, 158);
+    border-color: rgb(116, 53, 158); }
+  .btn-instagram:focus, .btn-instagram.focus {
+    box-shadow: 0 0 0 0.2rem rgb(116, 53, 158); }
+  .btn-instagram.disabled, .btn-instagram:disabled {
+    color: #fff;
+    background-color: #833AB4;
+    border-color: #833AB4; }
+  .btn-instagram:not(:disabled):not(.disabled):active, .btn-instagram:not(:disabled):not(.disabled).active,
+  .show > .btn-instagram.dropdown-toggle {
+    color: #fff;
+    background-color: #833AB4;
+    border-color: #833AB4; }
+    .btn-instagram:not(:disabled):not(.disabled):active:focus, .btn-instagram:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-instagram.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgb(116, 53, 158); }
+
 .btn-warning {
   color: #212529;
   background-color: #ffb822;
@@ -16823,7 +16869,7 @@ code {
     .m-messenger .m-messenger__messages .m-messenger__message.m-messenger__message--in .m-messenger__message-content .m-messenger__message-typing {
       color: #7b7e8a; }
   .m-messenger .m-messenger__messages .m-messenger__message.m-messenger__message--out .m-messenger__message-content {
-    background: #716aca; }
+    background: #1CB6AE; }
     .m-messenger .m-messenger__messages .m-messenger__message.m-messenger__message--out .m-messenger__message-content .m-messenger__message-username {
       color: #f0f0f0; }
     .m-messenger .m-messenger__messages .m-messenger__message.m-messenger__message--out .m-messenger__message-content .m-messenger__message-text {
@@ -16835,7 +16881,7 @@ code {
   color: #f4f5f8; }
 
 .m-messenger.m-messenger.m-messenger--message-arrow .m-messenger__message.m-messenger__message--out .m-messenger__message-arrow {
-  color: #716aca; }
+  color: #1CB6AE; }
 
 .m-portlet {
   margin-bottom: 2.2rem; }
