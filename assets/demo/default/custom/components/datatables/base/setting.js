@@ -17,18 +17,26 @@ var DatatableHtmlTableDemo = function () {
                 {
                     field: 'Name',
                     type: 'text',
+                    width: '130px'
                 },
                 {
                     field: 'Email',
                     type: 'email',
+                    width: '180px'
                 },
                 {
                     field: 'MobileNo',
                     type: 'number',
+                    width: '110px'
                 },
                 {
                     field: 'Note',
                     type: 'text',
+                    width: '480px'
+                },
+                {
+                    field: 'Action',
+                    width: '50px'
                 },
             ],
         });
