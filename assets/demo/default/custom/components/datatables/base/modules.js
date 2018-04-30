@@ -17,14 +17,17 @@ var DatatableHtmlTableDemo = function() {
 				{
                     field: 'Name',
 					type: 'text',
+					width: '250px'
 				},
 				{
                     field: 'Description',
-                    type: 'Description',
+					type: 'Description',
+					width: '480px'
                 }, 
                 {
                     field: 'Type',
-                    title: 'Type',
+					title: 'Type',
+					width: '100px',
 					// callback function support for column rendering
 					template: function(row) {
 						var type = {
@@ -37,8 +40,13 @@ var DatatableHtmlTableDemo = function() {
                 },
                 {
                     field: 'Priority',
-                    type: 'number',
-                }, 
+					type: 'number',
+					width: '80px'
+				}, 
+				{
+					field: 'Action',
+					width: '80px'
+				},
 			],
 		});
 

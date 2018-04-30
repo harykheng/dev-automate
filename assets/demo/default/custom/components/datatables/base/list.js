@@ -17,14 +17,21 @@ var DatatableHtmlTableDemo = function () {
                 {
                     field: 'Name',
                     type: 'text',
+                    width: '250px'
                 },
                 {
                     field: 'Description',
                     type: 'Description',
+                    width: '480px'
                 },
                 {
                     field: 'Total Audience',
                     type: 'number',
+                    width: '150px'
+                },
+                {
+                    field: 'Action',
+                    width: '50px'
                 }, 
             ],
         });

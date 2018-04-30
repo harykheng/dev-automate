@@ -17,14 +17,17 @@ var DatatableHtmlTableDemo = function () {
                 {
                     field: 'Name',
                     type: 'text',
+                    width: '150px'                    
                 },
                 {
                     field: 'Description',
                     type: 'Description',
+                    width: '480px'
                 },
                 {
                     field: 'Status',
                     title: 'Status',
+                    width: '180px',
                     // callback function support for column rendering
                     template: function (row) {
                         var status = {
@@ -35,6 +38,10 @@ var DatatableHtmlTableDemo = function () {
                             ' m-link--state">' + status[row.Status].title + '</span>';
                     },
                 },
+                {
+                    field: 'Action',
+                    width: '50px'
+                }, 
             ],
         });
 

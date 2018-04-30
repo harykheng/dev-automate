@@ -17,10 +17,12 @@ var DatatableHtmlTableDemo = function () {
         {
           field: 'Buyer',
           type: 'text',
+          width: '180px'
         },
         {
           field: 'Channel',
           title: 'Channel',
+          width: '80px',
           // callback function support for column rendering
           template: function (row) {
             var status = {
@@ -39,10 +41,12 @@ var DatatableHtmlTableDemo = function () {
           field: 'Duration',
           type: 'time',
           format: 'HH/mm/ss',
+          width: '80px',
         },
         {
           field: 'Status',
           title: 'Status',
+          width: '80px',
           // callback function support for column rendering
           template: function (row) {
             var status = {
@@ -51,6 +55,11 @@ var DatatableHtmlTableDemo = function () {
             };
             return '<span class="m-badge ' + status[row.Status].class + ' m-badge--wide">' + status[row.Status].title + '</span>';
           },
+        }, 
+        {
+          field: 'Action',
+          type: 'text',
+          width: '50px'
         },
          
       ],
