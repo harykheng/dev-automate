@@ -117,16 +117,19 @@
                                                 </a>
                                             </li>
                                             <center>
-                                                <button type="button" class="btn m-btn--pill    btn-success" style="margin: 18px; width: 85%;">
-                                                    Payouts Detail
-                                                </button>
-                                                <button type="button" class="btn m-btn--pill    btn-warning" style="color:  #fff; width: 85%;">
+                                                <a href="payoutDetail.html">
+                                                    <button type="button" class="btn m-btn--pill btn-success" style="margin: 18px; width: 85%;">
+                                                        Payouts Detail
+                                                    </button>
+                                                </a>
+                                                <button type="button" class="btn m-btn--pill btn-warning" style="color:  #fff; width: 85%;" data-toggle="modal" data-target="#request_CashOut">
                                                     Request CashOut
                                                 </button>
                                             </center>
                                         </ul>
                                     </div>
                                 </li>
+        
                                 <li class="m-menu__item  m-menu__item--submenu m-menu__item--rel" data-menu-submenu-toggle="click" data-redirect="true" aria-haspopup="true">
                                     <a href="#" class="m-menu__link m-menu__toggle">
                                         <span class="m-menu__link-text">
@@ -173,12 +176,16 @@
                                                 </a>
                                             </li>
                                             <center>
-                                                <button type="button" class="btn m-btn--pill    btn-success" style="margin: 18px; width: 85%;">
-                                                    Plan Detail
-                                                </button>
-                                                <button type="button" class="btn m-btn--pill    btn-warning" style="color:  #fff; width: 85%;">
-                                                    Change Plan
-                                                </button>
+                                                <a href="planBilling.html">
+                                                    <button type="button" class="btn m-btn--pill    btn-success" style="margin: 18px; width: 85%;">
+                                                        Plan Detail
+                                                    </button>
+                                                </a>
+                                                <a href="choosePlan.html">
+                                                    <button type="button" class="btn m-btn--pill    btn-warning" style="color:  #fff; width: 85%;">
+                                                        Change Plan
+                                                    </button>
+                                                </a>
                                             </center>
                                         </ul>
                                     </div>
@@ -192,7 +199,7 @@
                                 <ul class="m-topbar__nav m-nav m-nav--inline">
                                     <li class="m-nav__item m-topbar__notifications m-topbar__notifications--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-center 	m-dropdown--mobile-full-width"
                                         data-dropdown-toggle="click" data-dropdown-persistent="true">
-                                        <a href="#" class="m-nav__link m-dropdown__toggle">
+                                        <a href="#" class="m-nav__link m-dropdown__toggle" id="m_topbar_notification_icon">
                                             <span class="m-nav__link-icon">
                                                 <i class="flaticon-search-1"></i>
                                             </span>
@@ -741,13 +748,78 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
             </div>
         </div>
+        <!--begin::Modal-->
+        <div class="modal fade" id="request_CashOut" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Request Cashout
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                &times;
+                            </span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <span class="m-menu__link-text">
+                            Balance </br>
+                            <div style="color: #b91f68;font-size: 18px; font-weight:  bold;">Rp. 3.000.000</div>
+                        </span>
+                        </br>
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="form-control-label">
+                                    Name
+                                </label>
+                                <div class="input-group m-input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            Rp.
+                                        </span>
+                                    </div>
+                                    <input type="number" class="form-control m-input" placeholder="0" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="form-control-label">
+                                    Description
+                                </label>
+                                <select class="form-control m-input" id="exampleSelect1">
+                                    <option>
+                                        Select One
+                                    </option>
+                                    <option>
+                                        2
+                                    </option>
+                                    <option>
+                                        3
+                                    </option>
+                                    <option>
+                                        4
+                                    </option>
+                                    <option>
+                                        5
+                                    </option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn m-btn--pill btn-secondary" data-dismiss="modal">
+                            Cancel
+                        </button>
+                        <button type="button" class="btn m-btn--pill btn-success" data>
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end::Modal-->
         <!-- ISI SAMPAI DI SINI-->
         <footer class="m-grid__item		m-footer ">
             <div class="m-container m-container--fluid m-container--full-height m-page__container">
