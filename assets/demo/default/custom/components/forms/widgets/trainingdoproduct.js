@@ -4,7 +4,7 @@ var Select2 = function () {
     var demos = function () {
         // multi select
         $('#m_select2_3, #m_select2_3_validate').select2({
-            placeholder: "Select a state",
+            placeholder: "Inputs / Trigger...",
         });
 
         // loading remote data
@@ -34,7 +34,7 @@ var Select2 = function () {
         $('#m_select2_modal').on('shown.bs.modal', function () {
             // multi select
             $('#m_select2_3_modal').select2({
-                placeholder: "Select a state",
+                placeholder: "Inputs / Trigger...",
             });
             
         });
