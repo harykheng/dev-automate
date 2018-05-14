@@ -2,12 +2,26 @@
 var Select2 = function () {
     //== Private functions
     var demos = function () {
-        // multi select
-        $('#m_select2_3, #m_select2_3_validate').select2({
-            placeholder: "Inputs / Trigger...",
-        });
+        // loading data from array
+        var data = [{
+            id: 0,
+            text: 'Enhancement'
+        }, {
+            id: 1,
+            text: 'Bug'
+        }, {
+            id: 2,
+            text: 'Duplicate'
+        }, {
+            id: 3,
+            text: 'Invalid'
+        }, {
+            id: 4,
+            text: 'Wontfix'
+        }];
 
         // loading remote data
+
         function formatRepo(repo) {
             if (repo.loading) return repo.text;
             var markup = "<div class='select2-result-repository clearfix'>" +
@@ -28,16 +42,22 @@ var Select2 = function () {
         function formatRepoSelection(repo) {
             return repo.full_name || repo.text;
         }
-    }
 
-    var modalDemos = function () {
-        $('#m_select2_modal').on('shown.bs.modal', function () {
-            // multi select
-            $('#m_select2_3_modal').select2({
-                placeholder: "Inputs / Trigger...",
-            });
-            
+        // custom styles
+
+        // tagging support
+        $('#m_select2_12_1, #m_select2_12_2, #m_select2_12_3, #m_select2_12_4').select2({
+            placeholder: "Select an option",
         });
+
+        // tagging support
+        $('#m_select2_11').select2({
+            placeholder: "Add a tag",
+            tags: true
+        });
+
+        
+        
     }
 
     //== Public functions
