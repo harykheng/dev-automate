@@ -7002,7 +7002,7 @@ a.text-dark:hover, a.text-dark:focus {
   .modal .modal-content .modal-footer {
     padding: 25px; }
 
-/*imgae picker*/
+/*imgae picker start*/
 ul.thumbnails.image_picker_selector {
   overflow: auto;
   list-style-image: none;
@@ -7042,10 +7042,17 @@ ul.thumbnails.image_picker_selector li .thumbnail img {
 ul.thumbnails.image_picker_selector li .thumbnail.selected {
   background: #08c;
 }
+/*imgae picker end*/
+/*select2 custom Start*/
+.select2ol {
+    list-style-type: lower-roman;
+    list-style-image: url('quote.png');
+}
+.select2ol.li.button {
+    margin-left: 100px;
 
-/*imgae picker*/
-
-
+}
+/*select2 custom end*/
 
 .modal-open {
   overflow: auto !important;

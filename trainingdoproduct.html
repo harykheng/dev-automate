@@ -773,12 +773,13 @@
                                                  Inputs / Trigger (Enter to add new)
                                             </label>
                                             <div class="col-lg-12 col-md-9 col-sm-12 row" style="left: 15px">
-                                                <form id="myForm" class="m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed">
-                                                    <input type="text" id="firstname" placeholder="Input">
+                                                <form class="m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed" id="myForm" >
+                                                    <input class="form-control m-select2 col-lg-11" type="text" id="firstname" placeholder="Input">
+                                                    <button class="btn m-btn--square btn-success col-lg-1" id="myBtn"  type='button' onclick='changeText()' value='Add'>Add</button>
                                                     <br>
-                                                    <p>List text:</p>
-                                                    <ol id="demo"></ol>
-                                                    <input type='button' onclick='changeText()' value='Submit' />
+                                                    <div class="col-lg-12 col-md-9 col-sm-12 row" style="left: 15px">
+                                                        <ol class="select2ol" id="demo"></ol>
+                                                    </div>
                                                 </form>
                                             </div>
                                         </div>
@@ -952,14 +953,25 @@
     <!-- begin::Quick Nav -->
     <!-- begin::Quick Nav -->
     <script>
+        var input = document.getElementById("firstname");
+        input.addEventListener("keyup", function (event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                document.getElementById("myBtn").click();
+            }
+        });
+    </script>
+    <script>
         var list = document.getElementById('demo');
         var lastid = 0;
 
         function changeText() {
             var firstname = document.getElementById('firstname').value;
+
             var entry = document.createElement('li');
             entry.appendChild(document.createTextNode(firstname));
             entry.setAttribute('id', 'item' + lastid);
+
             var removeButton = document.createElement('button');
             removeButton.appendChild(document.createTextNode("remove"));
             removeButton.setAttribute('onClick', 'removeName("' + 'item' + lastid + '")');
@@ -967,7 +979,7 @@
             lastid += 1;
             list.appendChild(entry);
         }
-
+        
 
         function removeName(itemid) {
             var item = document.getElementById(itemid);
