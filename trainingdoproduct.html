@@ -774,8 +774,8 @@
                                             </label>
                                             <div class="col-lg-12 col-md-9 col-sm-12 row" style="left: 15px">
                                                 <form class="m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed" id="myForm" >
-                                                    <input class="form-control m-select2 col-lg-11" type="text" id="firstname" placeholder="Input">
-                                                    <button class="btn m-btn--square btn-success col-lg-1" id="myBtn"  type='button' onclick='changeText()' value='Add'>Add</button>
+                                                    <input class="form-control m-select2 col-lg-11" type="text" id="firstname" placeholder="Input"/>
+                                                    <input class="btn m-btn--square btn-success col-lg-1" id="mySubmit"  type='submit' onclick='changeText()'  />
                                                     <br>
                                                     <div class="col-lg-12 col-md-9 col-sm-12 row" style="left: 15px">
                                                         <ol class="select2ol" id="demo"></ol>
@@ -953,15 +953,6 @@
     <!-- begin::Quick Nav -->
     <!-- begin::Quick Nav -->
     <script>
-        var input = document.getElementById("firstname");
-        input.addEventListener("keyup", function (event) {
-            event.preventDefault();
-            if (event.keyCode === 13) {
-                document.getElementById("myBtn").click();
-            }
-        });
-    </script>
-    <script>
         var list = document.getElementById('demo');
         var lastid = 0;
 
@@ -974,11 +965,21 @@
 
             var removeButton = document.createElement('button');
             removeButton.appendChild(document.createTextNode("remove"));
+            removeButton.className="delete"
             removeButton.setAttribute('onClick', 'removeName("' + 'item' + lastid + '")');
             entry.appendChild(removeButton);
             lastid += 1;
             list.appendChild(entry);
         }
+        $('#mySubmit').click(function () {
+                return false;
+            });
+
+        $('#firstname').on('keyup', function (e) {
+            if (e.keyCode === 13) {
+                $('#mySubmit').click();
+            }
+        });
         
 
         function removeName(itemid) {

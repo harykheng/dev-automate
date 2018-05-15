@@ -8,6 +8,11 @@ var Select2 = function () {
             placeholder: "Add a tag",
             tags: true
         });
+        // tagging support
+        $('#firstname').select2({
+            placeholder: "",
+            tags: true
+        });
 
     }
 
