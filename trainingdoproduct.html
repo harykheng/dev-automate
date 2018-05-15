@@ -775,7 +775,7 @@
                                             <div class="col-lg-12 col-md-9 col-sm-12 row" style="left: 15px">
                                                 <form class="m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed" id="myForm" >
                                                     <input class="form-control m-select2 col-lg-11" type="text" id="firstname" placeholder="Input"/>
-                                                    <input class="btn m-btn--square btn-success col-lg-1" id="mySubmit"  type='submit' onclick='changeText()'  />
+                                                    <input class="btn m-btn--square btn-success col-lg-1" id="mySubmit"  type='button' onclick='changeText()' value="Add" />
                                                     <br>
                                                     <div class="col-lg-12 col-md-9 col-sm-12 row" style="left: 15px">
                                                         <ol class="select2ol" id="demo"></ol>
@@ -971,6 +971,7 @@
             lastid += 1;
             list.appendChild(entry);
         }
+        
         $('#mySubmit').click(function () {
                 return false;
             });
