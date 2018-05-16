@@ -72,7 +72,43 @@ var FormRepeater = function () {
             }
         });
     }
-    
+
+    var demo5 = function () {
+        $('#m_repeater_5').repeater({
+            initEmpty: false,
+
+            defaultValues: {
+                'text-input': 'foo'
+            },
+
+            show: function () {
+                $(this).slideDown();
+            },
+
+            hide: function (deleteElement) {
+                $(this).slideUp(deleteElement);
+            }
+        });
+    }
+
+    var demo6 = function () {
+        $('#m_repeater_6').repeater({
+            initEmpty: false,
+
+            defaultValues: {
+                'text-input': 'foo'
+            },
+
+            show: function () {
+                $(this).slideDown();
+            },
+
+            hide: function (deleteElement) {
+                $(this).slideUp(deleteElement);
+            }
+        });
+    }
+
     return {
         // public functions
         init: function () {
