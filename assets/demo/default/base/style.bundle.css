@@ -35204,3 +35204,59 @@ body.m-content--skin-light2 {
       text-align: center;
       float: none;
       margin: 0 auto; } }
+
+
+.inputWithIcon{
+  position:relative;
+  padding-left: 0;
+}
+.inputWithIcon input[type=text]{
+  padding-left:30px;
+}
+.inputWithIcon i.fa-quote-right{
+  position:absolute;
+  left:0;
+  top:2px;
+  padding:9px 8px;
+  color: #aaa;
+  transition:.3s;
+}
+.inputWithIcon input[type=text]:focus + i.fa-quote-right{
+  color:#403f45;
+}
+i.fa-trash-o{
+  color:#ac4675;
+}
+/* .inputWithIcon i.fa-trash-o{
+  position:absolute;
+  left:0;
+  top:2px;
+  padding:9px 8px;
+  color: #aaa;
+  transition:.3s;
+  float: right;
+} */
+.input-group-addon {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: #555;
+  text-align: center;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 5%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.icon-input {
+  padding-right:60px !important;
+}
+.times-icon {
+  right:20px;
+  position:absolute;
+  top:2px;
+  padding: 1px 1px;
+  font-size: 2em;
+}
