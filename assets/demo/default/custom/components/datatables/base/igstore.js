@@ -15,20 +15,19 @@ var DatatableHtmlTableDemo = function () {
             },
             columns: [
                 {
-                    field: 'Buyer',
-                    type: 'text',
+                    field: 'Image',
+                    type: 'image',
+                    width: '100px',
                 },
                 {
-                    field: 'Status',
-                    title: 'Status',
-                    // callback function support for column rendering
-                    template: function (row) {
-                        var status = {
-                            1: { 'title': 'On-Going', 'class': 'm-badge--success' },
-                            2: { 'title': 'Another Product', 'class': ' m-badge--danger' },
-                        };
-                        return '<span class="m-badge ' + status[row.Status].class + ' m-badge--wide">' + status[row.Status].title + '</span>';
-                    },
+                    field: 'Product',
+                    title: 'Product',
+                    width: '680px',
+                },
+                {
+                    field: 'Action',
+                    title: 'Action',
+                    width: '50px',
                 },
 
             ],

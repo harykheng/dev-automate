@@ -51,7 +51,7 @@ var DatatableHtmlTableDemo = function () {
           template: function (row) {
             var status = {
               1: { 'title': 'On-Going', 'class': 'm-badge--success' },
-              2: { 'title': 'End', 'class': ' m-badge--danger' },
+              2: { 'title': 'End', 'class': ' m-badge--end' },
             };
             return '<span class="m-badge ' + status[row.Status].class + ' m-badge--wide">' + status[row.Status].title + '</span>';
           },
