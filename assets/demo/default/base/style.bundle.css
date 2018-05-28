@@ -11498,7 +11498,7 @@ b, strong {
     margin-left: -162.5px; }
   .m-dropdown.m-dropdown--align-center.m-dropdown--large .m-dropdown__wrapper {
     width: 380px;
-    margin-left: -190px; }
+    margin-left: -300px; }
   .m-dropdown.m-dropdown--align-center.m-dropdown--huge .m-dropdown__wrapper {
     width: 455px;
     margin-left: -227.5px; }
@@ -11705,7 +11705,7 @@ b, strong {
   width: 40px;
   position: relative;
   left: 50%;
-  margin-left: -20px;
+  margin-left: 90px;
   top: 0;
   position: absolute; }
   .m-dropdown.m-dropdown--arrow.m-dropdown--up .m-dropdown__arrow:before,
@@ -28943,7 +28943,6 @@ select.m-select2 {
             .m-pricing-table-2 .m-pricing-table-2__content .m-pricing-table-2__container .m-pricing-table-2__items .m-pricing-table-2__item .m-pricing-table-2__visual .m-pricing-table-2__icon > i {
               font-size: 6.43rem; }
         .m-pricing-table-2 .m-pricing-table-2__content .m-pricing-table-2__container .m-pricing-table-2__items .m-pricing-table-2__item .m-pricing-table-2__subtitle {
-          margin-top: 17.1rem;
           font-size: 1.64rem; }
         .m-pricing-table-2 .m-pricing-table-2__content .m-pricing-table-2__container .m-pricing-table-2__items .m-pricing-table-2__item .m-pricing-table-2__features {
           margin: 2.14rem 0 1.8rem;
@@ -29695,7 +29694,6 @@ select.m-select2 {
     padding: 2rem 11rem; }
   .m-login.m-login--1 .m-login__content {
     padding: 5rem 10rem 10rem 10rem;
-    background-attachment: fixed;
     background-size: cover; }
     .m-login.m-login--1 .m-login__content .m-login__welcome {
       color: #ffffff;
@@ -31138,8 +31136,8 @@ body.m-content--skin-light2 {
           .m-topbar .m-topbar__nav.m-nav > .m-nav__item > .m-nav__link .m-nav__link-icon > i {
             font-size: 1.5rem; }
             .m-topbar .m-topbar__nav.m-nav > .m-nav__item > .m-nav__link .m-nav__link-icon > i:before {
-              background: -webkit-linear-gradient(180deg, #ad5beb 25%, #c678db 50%, #da6ea9 75%, #e76e92 100%);
-              background: linear-gradient(180deg, #ad5beb 25%, #c678db 50%, #da6ea9 75%, #e76e92 100%);
+              background: #1db6ad; 
+              background: #1db6ad;
               background-clip: text;
               text-fill-color: transparent;
               -webkit-background-clip: text;
