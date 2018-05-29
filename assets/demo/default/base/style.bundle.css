@@ -22715,7 +22715,7 @@ body.m-portlet--fullscreen {
     color: #9699a2; }
 
 .form-control[readonly] {
-  background-color: transparent; }
+  background-color: #f2f3f8; }
 
 .form-control.focus, .form-control:focus {
   border-color: #716aca;
